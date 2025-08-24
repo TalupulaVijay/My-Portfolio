@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Certifications — Vijay</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .cert-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border-radius: 16px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 12px 30px rgba(2,6,23,0.4);
+      transition: transform .4s, box-shadow .4s;
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    .cert-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 20px 50px rgba(106,17,203,0.3);
+    }
+    .cert-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: white;
+      flex-shrink: 0;
+    }
+    .cert-details h3 {
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .cert-details p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blob" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
+
+  <nav>
+    <div class="brand"><div class="logo">VT</div><h2>Vijay Talupula</h2></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="certifications.html" class="active">Certifications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="internships.html">Internships</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h1>Certifications</h1>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="cert-details">
+            <h3>Google AI Essentials</h3>
+            <p>Coursera — Basics of AI, real-world applications & responsible AI usage.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="cert-details">
+            <h3>Python Essentials</h3>
+            <p>Cisco Networking Academy — Python basics, control structures, functions.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="cert-details">
+            <h3>Deep Learning</h3>
+            <p>Infosys Springboard — Neural networks, backpropagation, DL concepts.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-details">
+            <h3>Introduction to AI</h3>
+            <p>Infosys Springboard — Fundamental AI concepts & ML basics.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="cert-details">
+            <h3>SQL & Relational Databases</h3>
+            <p>IBM — SQL querying & database management fundamentals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© Vijay Talupula</footer>
+</body>
+</html>
